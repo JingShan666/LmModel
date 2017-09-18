@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <wei.toolkit.widget.VViewPager
+        android:id="@+id/activity_home_lib2_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_home_lib2_navigation"
+        bvp:banSlide="true">
+
+    </wei.toolkit.widget.VViewPager>
+
+    <LinearLayout
+        android:id="@+id/activity_home_lib2_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/activity_home_lib2_invite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_home_lib2_invite_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_invite"
+                android:text="首页"
+                android:textColor="@color/selector_invite"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_home_lib2_discover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_home_lib2_discover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_discover"
+                android:text="发现"
+                android:textColor="@color/selector_invite"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/activity_home_lib2_publish"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/icon_order_publish" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/activity_home_lib2_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_home_lib2_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_message"
+                android:text="消息"
+                android:textColor="@color/selector_invite"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/activity_home_lib2_unread_tv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_unread_msg"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="3"
+                android:text=""
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_home_lib2_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_home_lib2_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/selector_mine"
+                android:text="我的"
+                android:textColor="@color/selector_invite"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

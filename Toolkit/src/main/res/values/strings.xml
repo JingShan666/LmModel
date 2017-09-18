@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChooseVideoPicture</string>
+    <string name="camera_opt_tips">轻触拍照,长按摄像</string>
+    <string name="v_permission_alert">%1$s权限未打开，请去设置页面打开</string>
+</resources>

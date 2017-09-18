@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="140dp"
+    android:background="@drawable/yuanjiao_bg">
+
+    <TextView
+        android:id="@+id/tishi_content"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的个人资料还不完善\n请先完善个人资料再来发布吧~"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tisshi_line"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/tisshi_line"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/quxiao"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tisshi_line"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/biankuang_zhuce"
+        android:text="暂不完善"
+        android:textColor="@color/theme_red"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/wanshan_tv"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tisshi_line"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/biankuang_zhuce"
+        android:text="完善资料"
+        android:textColor="@color/theme_red"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">moments</string>
+    <string name="publish_ments_hint">来聊聊你此时此刻的心情吧...</string>
+</resources>

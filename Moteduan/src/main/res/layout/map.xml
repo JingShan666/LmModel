@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black_theme">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="back"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/back"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地点定位"
+            android:textColor="@color/white2"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="6dp"
+            android:text="当前位置"
+            android:textColor="@color/white2"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+  <!--
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="normal"
+            android:tab="正常"/>
+
+        <Button
+            android:id="@+id/satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="satellite"
+            android:tab="卫星"/>
+
+        <Button
+            android:id="@+id/none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="none"
+            android:tab="空白"/>
+
+        <Button
+            android:id="@+id/openMyPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="openMyPosition"
+            android:tab="定位"/>
+
+        <Button
+            android:id="@+id/closeMyPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="closeMyPosition"
+            android:tab="取消"/>
+    </LinearLayout>
+
+  -->
+
+
+        <LinearLayout
+            android:id="@+id/llMLMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--map-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etMLCityPoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/merchants_service_comment_edit_bg"
+                    android:drawableLeft="@drawable/circle_icon_box_04"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="搜索"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/theme_red"
+                    android:textSize="16sp"/>
+
+
+                <ImageView
+                    android:id="@+id/ivLocationTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_gcoding"/>
+
+                <Button
+                    android:id="@+id/openMyPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bmapView"
+                    android:onClick="openMyPosition"
+                    android:text="定位1"
+                    android:layout_alignParentRight="true" />
+
+                <Button
+                    android:id="@+id/positoin"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/targetLayout"
+                    android:onClick="openMyPosition"
+                    android:text="定位2"
+                    android:layout_alignParentRight="true" />
+
+
+                <!--导航bar-->
+                <RelativeLayout
+                    android:id="@+id/targetLayout"
+                    android:background="@color/white2"
+                    android:layout_alignBottom="@+id/bmapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true">
+
+                    <LinearLayout
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/targetName"
+                            android:text="目标路径"
+                            android:maxLines="1"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="6dp"
+                            android:id="@+id/datail"
+                            android:text="详细地址"
+                            android:maxLines="1"
+                            android:textSize="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/route"
+                        android:src="@drawable/locatie_pressed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!--listView-->
+            <FrameLayout
+                android:id="@+id/searchSet"
+                android:background="@color/white2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+
+                <ImageView
+                    android:id="@+id/loading"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/loading_01"
+                    />
+
+                <!-- <com.bbc.lm.customerView.SpringbacklinearScrollView
+                     android:id="@+id/lvPoiList"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:cacheColorHint="@color/transparent"
+                     android:fastScrollEnabled="true"
+                     android:scrollbars="none"
+                     android:scrollingCache="false"
+                     >-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:visibility="gone"
+                        android:id="@+id/searchType"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:text="我的位置"
+                            android:layout_weight="1"
+                            android:id="@+id/myPosition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <RadioButton
+                            android:text="商家"
+                            android:id="@+id/shipper"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <RadioButton
+                            android:text="小区"
+                            android:id="@+id/quarters"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <RadioButton
+                            android:text="写字楼"
+                            android:id="@+id/office"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+                    <ListView
+                        android:id="@+id/cityPoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:cacheColorHint="@color/transparent"
+                        android:fastScrollEnabled="true"
+                        android:scrollbars="none"
+                        android:scrollingCache="false"
+                        android:visibility="gone"
+                        >
+                    </ListView>
+
+                </LinearLayout>
+
+                <!--</com.bbc.lm.customerView.SpringbacklinearScrollView>-->
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

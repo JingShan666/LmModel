@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_radius"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_select_invite_time_sure"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dialog_select_invite_time_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dialog_select_invite_time_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/dialog_select_invite_time_rg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_stroke_gray"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/dialog_select_invite_time_rb_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiobutton_select_invite_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_radiobutton_select_invite_time"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/text_gray" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/dialog_select_invite_time_rb_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiobutton_select_invite_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_radiobutton_select_invite_time"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/text_gray" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/dialog_select_invite_time_rb_three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiobutton_select_invite_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_radiobutton_select_invite_time"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+        <wei.toolkit.widget.VViewPager
+            android:id="@+id/dialog_select_invite_time_rb_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            bvp:childViewAnewMeasure="true"
+            bvp:banSlide="true"
+            android:background="@drawable/bg_stroke_gray">
+
+        </wei.toolkit.widget.VViewPager>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/dialog_select_invite_time_sure"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_stroke_radius8_mainred"
+        android:text="确定"
+        android:textColor="@color/theme_red" />
+</LinearLayout>

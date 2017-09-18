@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/lm_bar_action" />
+
+    <TextView
+        android:id="@+id/activity_poi_search_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lm_edt_normal_size"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:background="@null"
+        android:drawableLeft="@mipmap/lm_icon_search_black"
+        android:drawablePadding="@dimen/lm_basic_padding"
+        android:gravity="center_vertical"
+        android:hint="搜索附近位置"
+        android:lines="1"
+        android:textSize="@dimen/lm_text_normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:background="@color/lm_9755D7" />
+
+    <TextView
+        android:id="@+id/activity_poi_none"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lm_btn_normal_size"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:gravity="center_vertical"
+        android:text="不显示位置"
+        android:textColor="@color/lm_9755D7"
+        android:textSize="@dimen/lm_text_normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:background="@color/lm_decoration_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_poi_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

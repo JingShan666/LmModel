@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lm_decoration"
+    android:orientation="vertical">
+
+    <include layout="@layout/lm_bar_action" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lm_white"
+                android:orientation="vertical"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <EditText
+                    android:id="@+id/activity_publish_moments_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="@string/publish_ments_hint"
+                    android:maxLength="300"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/lm_font"
+                    android:textColorHint="@color/lm_font_light"
+                    android:textSize="@dimen/lm_text_small_size" />
+
+                <wei.moments.base.BaseRecycleView
+                    android:id="@+id/activity_publish_moments_rv"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never">
+
+                </wei.moments.base.BaseRecycleView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lm_basic_margin"
+                android:background="@color/lm_white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_publish_moments_poi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/lm_icon_location"
+                    android:drawablePadding="9dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="16dp"
+                    android:text="地点定位"
+                    android:textColor="@color/lm_font"
+                    android:textSize="@dimen/lm_text_normal_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lm_decoration_line" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_publish_moments_open_state_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/lm_icon_earth"
+                        android:drawablePadding="9dp"
+                        android:text="私密状态"
+                        android:textColor="@color/lm_font"
+                        android:textSize="@dimen/lm_text_normal_size" />
+
+                    <TextView
+                        android:id="@+id/activity_publish_moments_open_state_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="9dp"
+                        android:drawableRight="@mipmap/lm_icon_arrow_right"
+                        android:text="公开"
+                        android:textColor="@color/lm_font_grey" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lm_bar_height"
+        android:background="@mipmap/v_bar_purple"
+        >
+
+        <ImageView
+            android:id="@+id/bar_action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:src="@mipmap/v_arrow_back" />
+
+        <TextView
+            android:id="@+id/bar_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/lm_white"
+            android:textSize="@dimen/lm_text_title_size" />
+
+        <TextView
+            android:id="@+id/bar_action_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:text="确定"
+            android:textColor="@color/selector_font"
+            android:visibility="invisible"
+            android:textSize="@dimen/lm_text_large_size" />
+    </RelativeLayout>
+</LinearLayout>

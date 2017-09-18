@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lm_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_moment_details_video_play"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000">
+
+        <wei.toolkit.widget.VideoPlayView
+            android:id="@+id/activity_moment_details_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/activity_moment_details_video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/activity_moment_details_video_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/lm_basic_margin"
+            android:src="@mipmap/lm_video_play" />
+
+        <ImageView
+            android:id="@+id/activity_moment_details_video_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:src="@mipmap/lm_icon_return" />
+
+        <ProgressBar
+            android:id="@+id/activity_moment_details_video_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lm_white"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                style="@style/ToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_moment_details_video_conetnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lm_basic_margin"
+                        android:layout_marginRight="@dimen/lm_basic_margin"
+                        android:layout_marginTop="@dimen/v_basic_margin"
+                        android:text=""
+                        android:autoLink="web"
+                        android:textColorLink="@color/sr_linkTextColor"
+                        android:textColor="@color/lm_font"
+                        android:textSize="@dimen/lm_text_small_size" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/lm_basic_margin">
+
+                        <TextView
+                            android:id="@+id/activity_moment_details_video_praise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:drawableLeft="@mipmap/lm_icon_praise_on"
+                            android:drawablePadding="3dp"
+                            android:text="赞()"
+                            android:textColor="@color/lm_font_light"
+                            android:textSize="@dimen/lm_text_small_size2" />
+
+                        <TextView
+                            android:id="@+id/activity_moment_details_video_flower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/lm_icon_flower_on"
+                            android:drawablePadding="3dp"
+                            android:text="花()"
+                            android:textColor="@color/lm_font_light"
+                            android:textSize="@dimen/lm_text_small_size2" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <wei.toolkit.widget.CircleImageBorderView
+                            android:id="@+id/activity_moment_details_video_portrait"
+                            android:layout_width="@dimen/lm_portrait_size"
+                            android:layout_height="@dimen/lm_portrait_size"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="@dimen/lm_basic_margin"
+                            android:layout_marginRight="@dimen/lm_basic_margin"
+                            android:layout_marginTop="@dimen/lm_basic_margin"
+                             />
+
+                        <ImageView
+                            android:id="@+id/activity_moment_details_video_role_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/activity_moment_details_video_portrait"
+                            android:layout_alignTop="@+id/activity_moment_details_video_portrait"
+                            android:src="@drawable/lm_icon_role_flag"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/activity_moment_details_video_portrait"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/activity_moment_details_video_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/lm_font_grey"
+                                android:textSize="@dimen/lm_text_normal_size" />
+
+                            <TextView
+                                android:id="@+id/activity_moment_details_video_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@mipmap/lm_bg_age"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="@color/lm_white"
+                                android:textSize="@dimen/lm_text_small_size2" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/activity_moment_details_video_watch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/lm_basic_margin"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lm_decoration" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/lm_basic_padding">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/activity_moment_details_video_tablayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                </android.support.design.widget.TabLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="赞(23)"
+                    android:textColor="@color/lm_font_grey"
+                    android:textSize="@dimen/lm_text_large_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lm_decoration" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_moment_details_video_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

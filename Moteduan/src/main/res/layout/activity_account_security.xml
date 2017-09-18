@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/background_white"
+    tools:context=".leftmenu.activity.AccountSecurity">
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_theme"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="back"
+            android:paddingLeft="10dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/back_select"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="重置提现密码"
+            android:textColor="@color/white2"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/theme_white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/updatePwd"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="15sp"
+            android:text="修改登录密码"
+            android:textColor="@color/black_theme"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_dianjijinru"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/theme_white"
+        android:orientation="horizontal">
+        <EditText
+            android:background="@null"
+            android:id="@+id/security_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="15sp"
+            android:hint="请输入手机号码"
+            android:textColorHint="@color/range"
+            android:textColor="@color/black_theme"
+            android:textSize="16sp"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            android:background="@null"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/theme_white"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/security_code"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="15sp"
+            android:hint="请输入验证码"
+            android:textColorHint="@color/range"
+            android:textColor="@color/black_theme"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/security_getcode"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="获取验证码"
+            android:gravity="center"
+            android:textColor="@color/theme_red"
+            android:background="@drawable/biankuang_zhuce"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/security_next"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:textColor="@color/white"
+        android:text="下一步"
+        android:textSize="18sp"
+        android:background="@drawable/bg_gray"/>
+
+
+</LinearLayout>

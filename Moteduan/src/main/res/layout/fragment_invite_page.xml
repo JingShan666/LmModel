@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lm_bar_height"
+        android:background="@drawable/actionbar_bg">
+
+        <TextView
+            android:id="@+id/fragment_invite_page_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="9dp"
+            android:text="郑州市"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/fragment_invite_page_location_text"
+            android:src="@drawable/ic_arrow_down" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/md_invite_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sr_text_title_size" />
+    </RelativeLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/fragment_invite_page_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <wei.toolkit.widget.VRecycleView
+            android:id="@+id/fragment_invite_page_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_white">
+
+        </wei.toolkit.widget.VRecycleView>
+
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

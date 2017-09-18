@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lm_fragment_comment_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lm_fragment_comment_bottom_edit">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/lm_fragment_comment_bottom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lm_white"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lm_decoration" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:hint="添加评论"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:textColor="@color/lm_font"
+            android:textColorHint="@color/lm_font_light"
+            android:textSize="@dimen/lm_text_large_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:src="@mipmap/lm_icon_comment_commit" />
+    </RelativeLayout>
+
+</RelativeLayout>

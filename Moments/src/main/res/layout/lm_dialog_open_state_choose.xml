@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/lm_basic_padding"
+        android:paddingTop="@dimen/lm_basic_padding"
+        android:text="谁可以看"
+        android:textColor="@color/lm_font_title"
+        android:textSize="@dimen/lm_text_title_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lm_decoration_line" />
+
+    <RadioGroup
+        android:id="@+id/dialog_open_state_choose_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dialog_open_state_choose_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/lm_selector_btn_radio"
+            android:paddingBottom="@dimen/lm_basic_padding"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:paddingTop="@dimen/lm_basic_padding"
+            android:text="公开"
+            android:textColor="@color/lm_font_select"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lm_decoration_line" />
+
+        <RadioButton
+            android:id="@+id/dialog_open_state_choose_mutual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/lm_selector_btn_radio"
+            android:paddingBottom="@dimen/lm_basic_padding"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:paddingTop="@dimen/lm_basic_padding"
+            android:text="相互关注的人可见"
+            android:textColor="@color/lm_font_select"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lm_decoration_line" />
+
+        <RadioButton
+            android:id="@+id/dialog_open_state_choose_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/lm_selector_btn_radio"
+            android:paddingBottom="@dimen/lm_basic_padding"
+            android:paddingLeft="@dimen/lm_basic_padding"
+            android:paddingRight="@dimen/lm_basic_padding"
+            android:paddingTop="@dimen/lm_basic_padding"
+            android:text="仅用户可看"
+            android:textColor="@color/lm_font_select"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lm_decoration_line" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dialog_open_state_choose_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/lm_basic_padding"
+        android:layout_marginTop="@dimen/lm_basic_padding"
+        android:background="@mipmap/lm_btn_confirm"
+        android:text="确定"
+        android:textColor="@color/lm_white"
+        android:textSize="@dimen/lm_text_normal_size" />
+
+</LinearLayout>

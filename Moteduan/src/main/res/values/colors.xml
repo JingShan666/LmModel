@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="f6f6f6">#f6f6f6</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_A0A0A0">#a0a0a0</color>
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="wubeijingse">#00000000</color>
+    <color name="transparent_1_w">#10FFFFFF</color>
+    <color name="transparent_2_w">#20FFFFFF</color>
+    <color name="transparent_5">#50000000</color>
+    <color name="transparent_8">#80000000</color>
+
+    <color name="text_black">#212121</color>
+    <color name="text_background">#D8d8d8</color>
+    <color name="theme_red">#ff5786</color>
+    <color name="red">#FF0000</color>
+    <color name="text_gray">#757575</color>
+    <color name="btn_home_stop_item">#FF7272</color>
+    <color name="btn_home_mode_item">#FFBE53</color>
+    <color name="release_textcolor">#aaa</color>
+    <color name="release_theme">#c8c8c8</color>
+    <color name="range">#c0c0c0</color>
+    <color name="tagbg">#E5E5E5</color>
+
+    <color name="bianxian">#D6d6d6</color>
+    <color name="timebg">#e5e5e5</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="red_send_fail">#FF5135</color>
+    <color name="green">#00FF99</color>
+    <color name="green_send_ok">#00EB69</color>
+    <color name="dark_green">#328955</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_read_ok">#00C2EB</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="dark_yellow">#CAA675</color>
+    <color name="dark_yellow2">#DFBD0B</color>
+    <color name="violet">#A25EA2</color>
+    <color name="denglu_bg">#272538</color>
+    <color name="black">#000000</color>
+    <color name="black_theme">#212121</color>
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="black_translucent">#80000000</color>
+    <color name="gray">#c0c0c0</color>
+    <color name="whitegray">#f2f2f2</color>
+    <color name="theme_line_gray">#343434</color>
+    <color name="bg_yuehuui">#e3e3e3</color>
+
+    <color name="gray_theme">#757575</color>
+    <color name="gray_square_line">#858585</color>
+
+    <color name="gray_light_theme">#C4C4C4</color>
+
+    <color name="gray_chat_time">#A4A4A4</color>
+    <color name="gray_dark">#3C3C3C</color>
+    <color name="white_chat_time">#F9F9F9</color>
+
+
+    <color name="gray_light">#CECECE</color>
+    <color name="gray_light2">#9A9A9A</color>
+    <color name="gray_trans">#99000000</color><!--半透明灰色-->
+    <color name="white2">#F9F9F9</color>
+    <color name="theme_white">#fff</color>
+    <color name="background_white">#f2f2f2</color>
+    <color name="textrelease">#757575</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_actionbar">#000</color>
+    <color name="pink">#ff5786</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="font_black">#000000</color>
+    <color name="font">#353535</color>
+    <color name="font_grey">#888888</color>
+    <color name="font_light">#b2b2b2</color>
+    <color name="font_f2f2f2">#f2f2f2</color>
+
+</resources>

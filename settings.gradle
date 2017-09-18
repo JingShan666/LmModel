@@ -1,0 +1,1 @@
+include ':app', ':Toolkit', ':Moments', ':Moteduan', ':IMLib', ':IMKit', ':PullToRefresh', ':FlycoTabLayout_Lib', ':flowlayout-lib', ':photoview', ':ShareResource'

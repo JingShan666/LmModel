@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <wei.toolkit.widget.CircleImageBorderView
+            android:id="@+id/item_moments_picture_portrait"
+            android:layout_width="@dimen/lm_portrait_size"
+            android:layout_height="@dimen/lm_portrait_size"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:layout_marginTop="@dimen/lm_basic_margin"
+            android:src="@color/v_f2f2f2" />
+
+        <ImageView
+            android:id="@+id/item_moments_picture_role_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/item_moments_picture_portrait"
+            android:layout_alignTop="@+id/item_moments_picture_portrait"
+            android:src="@drawable/lm_icon_role_flag"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_moments_picture_portrait"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_moments_picture_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="匿名"
+                android:textColor="@color/lm_font_grey"
+                android:textSize="@dimen/lm_text_normal_size" />
+
+            <TextView
+                android:id="@+id/item_moments_picture_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/lm_bg_age"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="20"
+                android:textColor="@color/lm_white"
+                android:textSize="@dimen/lm_text_small_size2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_moments_picture_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_moments_picture_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/icon_delete_grey"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_moments_picture_conetnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:text="内容"
+        android:textColor="@color/lm_font"
+        android:textColorLink="@color/sr_linkTextColor"
+        android:textSize="@dimen/lm_text_small_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lm_basic_margin"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/item_moments_picture_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/sr_font_f2f2f2"
+            android:layout_alignParentTop="true" />
+
+        <wei.moments.base.BaseRecycleView
+            android:id="@+id/item_moments_picture_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </wei.moments.base.BaseRecycleView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_moments_picture_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:text=""
+        android:textColor="@color/lm_font_light"
+        android:textSize="@dimen/lm_text_small_size2"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lm_basic_margin"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin">
+
+        <TextView
+            android:id="@+id/item_moments_picture_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/lm_font_light"
+            android:textSize="@dimen/lm_text_small_size2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_moments_picture_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/lm_icon_praise_on"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="赞(20)"
+                android:textColor="@color/lm_font_light"
+                android:textSize="@dimen/lm_text_small_size2" />
+
+            <TextView
+                android:id="@+id/item_moments_picture_flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/lm_icon_flower_on"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="花(20)"
+                android:textColor="@color/lm_font_light"
+                android:textSize="@dimen/lm_text_small_size2" />
+
+            <TextView
+                android:id="@+id/item_moments_picture_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/lm_icon_comment"
+                android:drawablePadding="3dp"
+                android:text="评论(20)"
+                android:gravity="center_vertical"
+                android:textColor="@color/lm_font_light"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

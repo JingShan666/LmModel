@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+                >
+
+   <TextView
+       android:paddingTop="10dp"
+       android:layout_marginBottom="5dp"
+        android:layout_above="@+id/dataPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:textSize="18sp"
+        android:text="年龄(岁)"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/dataPicker"
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.aigestudio.wheelpicker.widgets.WheelDatePicker
+        android:id="@+id/dataPicker"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/dataPicker"
+        android:background="@color/gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dataPicker"
+        android:orientation="horizontal"
+        android:gravity="center"
+     >
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/theme_red"
+            android:text="取消"
+            android:clickable="true"
+            android:background="@drawable/biankuang_zhuce"/>
+
+        <TextView
+            android:layout_marginLeft="90dp"
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/theme_red"
+            android:clickable="true"
+            android:text="确定"
+            android:background="@drawable/biankuang_zhuce"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

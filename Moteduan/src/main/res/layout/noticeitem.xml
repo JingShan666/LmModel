@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout50"
+                android:layout_width="104dp"
+                android:layout_height="116dp">
+
+                <ImageView
+                    android:id="@+id/noticecover"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon" />
+
+                <ImageView
+                    android:id="@+id/notice_photo"
+                    android:layout_width="124dp"
+                    android:layout_height="120dp"
+                    android:alpha="0.4"
+                    android:background="@color/black"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/li"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/eat" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@+id/relativeLayout14"
+            android:layout_toRightOf="@+id/relativeLayout14">
+
+            <ImageView
+                android:id="@+id/noticeicon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon" />
+            <TextView
+                android:id="@+id/noticename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/noticeicon"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/noticeicon"
+                android:layout_toRightOf="@+id/noticeicon"
+                android:text="风一样的男人"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="33dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/noticeicon"
+                android:layout_toRightOf="@+id/noticeicon"
+                android:background="@mipmap/boy"
+                android:gravity="right|center_vertical"
+                android:paddingRight="3dp"
+                android:text="24"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout18"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/relativeLayout14">
+
+            <LinearLayout
+                android:id="@+id/timelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/timemark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="今日"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/noticetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="18:00 - 20:00"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locationlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timelayout"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingLeft="3dp">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/locationmark" />
+
+                <TextView
+                    android:id="@+id/noticelocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lines="1"
+                    android:text="郑东新区CBD丹尼斯一天地鸿茂斋"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locationlayout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/noticeprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="200"
+                    android:textColor="@color/pink"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/noticeprice"
+                    android:layout_toRightOf="@+id/noticeprice"
+                    android:text="元"
+                    android:textColor="@color/pink"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/yuan"
+                    android:layout_toRightOf="@+id/yuan"
+                    android:text="/单"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/noticeapply"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_radius12_color_themered"
+                    android:gravity="center"
+                    android:text="报名"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

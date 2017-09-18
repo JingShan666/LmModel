@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="oval" android:useLevel="false">
+            <solid android:color="#FF5272" />
+            <size android:width="45dp" android:height="45dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="oval" android:useLevel="false">
+            <solid android:color="#FF5272" />
+            <size android:width="45dp" android:height="45dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval" android:useLevel="false">
+            <solid android:color="@color/btn_home_stop_item" />
+            <size android:width="45dp" android:height="45dp" />
+        </shape>
+    </item>
+</selector>

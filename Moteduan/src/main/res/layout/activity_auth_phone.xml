@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/text_background"
+    tools:context=".leftmenu.AuthPhone">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_theme"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/back_select"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/white2"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout"
+        android:orientation="vertical">
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/yuanpwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@color/theme_white"
+                android:hint="请输入原密码"
+                android:textSize="16sp"
+                android:textColor="@color/black_theme"
+                android:maxLines="1"
+                android:inputType="textVisiblePassword"/>
+
+
+
+            <EditText
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/newPwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:hint="请输入新密码"
+                android:textSize="16sp"
+                android:textColor="@color/black_theme"
+                android:background="@color/theme_white"
+                android:maxLines="1"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/newPwd2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:hint="请再次输入新密码"
+            android:textSize="16sp"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/black_theme"
+            android:background="@color/theme_white"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="确认修改"
+        android:id="@+id/next"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_solid_radius90_mainred"
+        android:gravity="center"
+        android:textColor="@color/theme_white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

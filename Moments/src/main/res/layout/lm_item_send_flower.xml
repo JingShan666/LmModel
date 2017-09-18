@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <wei.toolkit.widget.CircleImageBorderView
+            android:id="@+id/item_send_flower_portrait"
+            android:layout_width="@dimen/lm_portrait_size"
+            android:layout_height="@dimen/lm_portrait_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_marginTop="10dp"
+             />
+
+        <TextView
+            android:id="@+id/item_send_flower_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_toRightOf="@+id/item_send_flower_portrait"
+            android:text=""
+            android:textSize="@dimen/lm_text_large_size"
+            android:textColor="@color/lm_font"/>
+
+        <TextView
+            android:id="@+id/item_send_flower_flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:drawableLeft="@mipmap/lm_icon_flower_off"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="@color/lm_font_light"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/item_send_flower_name"
+            android:layout_alignRight="@+id/item_send_flower_flower"
+            android:layout_below="@+id/item_send_flower_portrait"
+            android:background="@color/lm_decoration" />
+
+    </RelativeLayout>
+
+</LinearLayout>

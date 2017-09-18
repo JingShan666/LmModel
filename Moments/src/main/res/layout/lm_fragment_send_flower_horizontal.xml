@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_send_flower_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@color/lm_decoration" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:layout_marginTop="9dp"
+        android:text="收到鲜花"
+        android:textColor="@color/sr_font"
+        android:textSize="@dimen/lm_text_large_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lm_decoration" />
+
+    <wei.moments.base.BaseRecycleView
+        android:id="@+id/fragment_send_flower_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        >
+
+    </wei.moments.base.BaseRecycleView>
+</LinearLayout>

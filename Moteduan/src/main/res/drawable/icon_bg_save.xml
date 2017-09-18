@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <!-- 视频录制保存与取消按钮背景 -->
+    <!-- 圆形背景图 -->
+    <solid android:color="@color/transparent_1_w" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/transparent_2_w" />
+
+    <!--
+         <size
+        android:height="20dp"
+        android:width="20dp" />
+    -->
+
+</shape>

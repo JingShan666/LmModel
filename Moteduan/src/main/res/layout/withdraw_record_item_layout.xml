@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout11">
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="20sp"
+            android:textColor="@color/black_actionbar"
+            android:id="@+id/textView12"
+       />
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/black_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textView13"
+            />
+
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到账方式 ： 银行卡"
+            android:id="@+id/textView14"
+            android:textSize="16sp"
+            android:layout_above="@+id/textView16"
+            android:layout_alignRight="@+id/cuttingline"
+            android:layout_alignEnd="@+id/cuttingline" />
+
+</LinearLayout>
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"
+            android:id="@+id/cuttingline">
+
+        </View>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cuttingline"
+            android:layout_alignLeft="@+id/cuttingline"
+            android:layout_alignStart="@+id/cuttingline">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/withdraw_manage"
+                    android:layout_below="@+id/cuttingline"
+                    android:layout_alignRight="@+id/textView13"
+                    android:layout_alignEnd="@+id/textView13" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在受理……"
+                    android:textSize="16sp"
+                    android:id="@+id/textView15"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_alignTop="@+id/textView16"
+                    android:layout_toRightOf="@+id/textView13"
+                    android:layout_toEndOf="@+id/textView13" />
+
+                <TextView
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016 - 08 - 13"
+                    android:id="@+id/textView16"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/cuttingline"
+                    android:layout_alignLeft="@+id/textView14"
+                    android:layout_alignStart="@+id/textView14" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

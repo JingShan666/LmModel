@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout14"
+            android:layout_width="104dp"
+            android:layout_height="116dp">
+
+            <wei.toolkit.widget.RoundedImageView
+                android:id="@+id/datecover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/type_photo"
+                android:layout_width="124dp"
+                android:layout_height="120dp"
+                android:alpha="0.2"
+                android:background="@color/black"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@+id/relativeLayout14"
+            android:layout_toRightOf="@+id/relativeLayout14">
+
+            <wei.toolkit.widget.CircleImageBorderView
+                android:id="@+id/dateicon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/datename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dateicon"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dateicon"
+                android:text="风一样的男人"
+                android:textColor="@color/black_theme"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/datesex"
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/dateicon"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dateicon"
+                android:background="@mipmap/boy"
+                android:gravity="right"
+                android:paddingRight="2dp"
+                android:text="24"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout18"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/relativeLayout14">
+
+            <LinearLayout
+                android:id="@+id/timelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="3dp">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/timemark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="18:00 - 20:00"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locationlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timelayout"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingLeft="3dp">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/locationmark" />
+
+                <TextView
+                    android:id="@+id/datelocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:lines="1"
+                    android:text="郑东新区CBD丹尼斯一天地鸿茂斋"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locationlayout"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="3dp">
+
+                <TextView
+                    android:id="@+id/datemoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="200"
+                    android:textColor="@color/pink"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/datemoney"
+                    android:layout_toRightOf="@+id/datemoney"
+                    android:text="币"
+                    android:textColor="@color/pink"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/datemoney"
+                    android:layout_toRightOf="@+id/danwei"
+                    android:text="/单/人" />
+
+                <TextView
+                    android:id="@+id/dateapply"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bg_radius12_color_themered"
+                    android:gravity="center"
+                    android:text="报名"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

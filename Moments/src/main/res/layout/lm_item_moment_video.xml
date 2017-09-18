@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <wei.toolkit.widget.CircleImageBorderView
+            android:id="@+id/item_moments_video_portrait"
+            android:layout_width="@dimen/lm_portrait_size"
+            android:layout_height="@dimen/lm_portrait_size"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:layout_marginTop="@dimen/lm_basic_margin"
+            android:src="@color/sr_font_f2f2f2" />
+
+        <ImageView
+            android:id="@+id/item_moments_video_role_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/item_moments_video_portrait"
+            android:layout_alignTop="@+id/item_moments_video_portrait"
+            android:src="@drawable/lm_icon_role_flag"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_moments_video_portrait"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_moments_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只是个玩笑"
+                android:textColor="@color/lm_font_grey"
+                android:textSize="@dimen/lm_text_normal_size" />
+
+            <TextView
+                android:id="@+id/item_moments_video_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/lm_bg_age"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="20"
+                android:textColor="@color/lm_white"
+                android:textSize="@dimen/lm_text_small_size2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_moments_video_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_moments_video_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/icon_delete_grey"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_moments_video_conetnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:text="一言不合就发视频~"
+        android:textColor="@color/lm_font_item_content"
+        android:textColorLink="@color/sr_linkTextColor"
+        android:textSize="@dimen/lm_text_small_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/lm_basic_margin"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:layout_marginTop="5dp"
+        android:background="#000000">
+
+        <wei.toolkit.widget.VideoPlayView
+            android:id="@+id/item_moments_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/item_moments_video_control_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_moments_video_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sr_font_f2f2f2"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/item_moments_video_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/lm_basic_margin"
+                android:src="@mipmap/lm_video_play" />
+
+            <ProgressBar
+                android:id="@+id/item_moments_video_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_moments_video_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin"
+        android:text=""
+        android:textColor="@color/lm_font_light"
+        android:textSize="@dimen/lm_text_small_size2"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/lm_basic_margin"
+        android:layout_marginLeft="@dimen/lm_basic_margin"
+        android:layout_marginRight="@dimen/lm_basic_margin">
+
+        <TextView
+            android:id="@+id/item_moments_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/lm_font_light"
+            android:textSize="@dimen/lm_text_small_size2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_moments_video_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/lm_icon_praise_on"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="赞(20)"
+                android:textColor="@color/lm_font_light"
+                android:textSize="@dimen/lm_text_small_size2" />
+
+            <TextView
+                android:id="@+id/item_moments_video_flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/lm_icon_flower_on"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="花(20)"
+                android:textColor="@color/lm_font_light"
+                android:textSize="@dimen/lm_text_small_size2" />
+
+            <TextView
+                android:id="@+id/item_moments_video_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/lm_icon_comment"
+                android:drawablePadding="3dp"
+                android:gravity="center_vertical"
+                android:text="评论(20)"
+                android:textColor="@color/lm_font_light"
+                android:textSize="@dimen/lm_text_small_size2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

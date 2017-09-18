@@ -1,0 +1,50 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+//        applicationId "wei.toolkit"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.liaoinstan.springview:library:1.2.6'
+    compile 'jp.wasabeef:glide-transformations:2.0.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'jp.wasabeef:glide-transformations:1.0.6'
+    compile project(':photoview')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.alibaba.android:vlayout:1.0.9'
+    compile project(':ShareResource')
+}
+repositories {
+    mavenCentral()
+}

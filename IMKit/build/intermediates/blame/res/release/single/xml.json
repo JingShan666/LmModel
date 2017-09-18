@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\mote\\LmModel\\IMKit\\build\\intermediates\\res\\merged\\release\\xml\\rc_file_path.xml",
+        "source": "D:\\mote\\LmModel\\IMKit\\src\\main\\res\\xml\\rc_file_path.xml"
+    },
+    {
+        "merged": "D:\\liemoapp\\LmModel\\IMKit\\build\\intermediates\\res\\merged\\release\\xml\\rc_file_path.xml",
+        "source": "D:\\liemoapp\\LmModel\\IMKit\\src\\main\\res\\xml\\rc_file_path.xml"
+    }
+]

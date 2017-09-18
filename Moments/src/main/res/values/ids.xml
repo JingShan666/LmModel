@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="anchor" type="id" />
+    <item name="frame" type="id"/>
+    <item name="recycle" type="id"/>
+    <item name="fab" type="id"/>
+</resources>

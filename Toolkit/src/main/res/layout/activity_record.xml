@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <wei.toolkit.widget.CameraView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/v_camera" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/activity_record_opt_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/camera_opt_tips"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:id="@+id/camera_reset"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/activity_record_drop_bt"
+                android:layout_alignTop="@+id/activity_record_drop_bt"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/activity_record_drop_bt"
+                android:src="@mipmap/v_return"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/activity_record_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/camera_reset"
+                android:layout_alignLeft="@+id/camera_reset"
+                android:layout_alignRight="@+id/camera_reset"
+                android:layout_alignTop="@+id/camera_reset"
+                android:scaleType="center"
+                android:src="@mipmap/v_arrow_down" />
+
+            <wei.toolkit.widget.CircleProgressImage
+                android:id="@+id/activity_record_drop_bt"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@mipmap/v_camera_drop" />
+
+
+            <ImageView
+                android:id="@+id/activity_record_sure"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/activity_record_drop_bt"
+                android:layout_alignTop="@+id/activity_record_drop_bt"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/activity_record_drop_bt"
+                android:src="@mipmap/v_sure"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

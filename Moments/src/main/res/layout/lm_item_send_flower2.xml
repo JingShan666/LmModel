@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <wei.toolkit.widget.CircleImageBorderView
+        android:id="@+id/item_send_flower_portrait"
+        android:layout_width="@dimen/lm_portrait_size"
+        android:layout_height="@dimen/lm_portrait_size"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:src="@mipmap/icon" />
+
+    <ImageView
+        android:id="@+id/item_send_flower_img"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignRight="@+id/item_send_flower_portrait"
+        android:layout_alignTop="@+id/item_send_flower_portrait"
+        android:src="@mipmap/lm_icon_flower_on"
+        android:translationX="5dp"
+        android:translationY="-5dp" />
+
+    <TextView
+        android:id="@+id/item_send_flower_flower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_send_flower_img"
+        android:layout_alignLeft="@+id/item_send_flower_img"
+        android:layout_alignRight="@+id/item_send_flower_img"
+        android:layout_alignTop="@+id/item_send_flower_img"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:translationX="5dp"
+        android:translationY="-7dp" />
+
+
+</RelativeLayout>

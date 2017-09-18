@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_mine_schedule_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_mine_schedule_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="36dp"
+            android:drawableLeft="@drawable/icon_time_red"
+            android:drawablePadding="10dp"
+            android:text="12:00-14:00"
+            android:textColor="#353535"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_mine_schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="36dp"
+            android:text="2017-06-02"
+            android:textColor="@color/sr_font_grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="26dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/item_mine_schedule_invite_type_tfl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/item_mine_schedule_invite_address_tfl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+    </LinearLayout>
+</LinearLayout>

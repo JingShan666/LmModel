@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.bm.library.PhotoView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+
+
+<!--
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/voice_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+-->
+
+
+
+
+
+

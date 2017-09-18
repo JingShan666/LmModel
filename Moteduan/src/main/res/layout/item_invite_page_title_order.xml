@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_invite_page_title_order_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_invite_page_title_order_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/sr_font_grey"
+        android:background="@color/sr_font_f2f2f2"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ShareResource</string>
+    <string name="sr_no_more_data">没有更多了</string>
+    <string name="oss_image_thumbnail">\?x-oss-process=image/resize,w_%1$d,h_%2$d/quality,Q_100</string>
+    <string name="error_network_block">网络忙</string>
+    <string name="deal_appellation">订单</string>
+    <string name="notice_cancel_rule">模特取消规则：\n
+        1、通告达成之后2小时内 取消无责。\n
+2、通告达成 2小时之后 到通告开始前24小时之前 礼仪取消，记录一次负面行为（
+记一次负面行为罚10模币，2次负面行为警告一次）\n
+3、通告达成 并在通告开始前24小时之内 礼仪取消，警告一次（警告一次扣除100
+模币，2次警告通报并拉入黑名单）。\n
+4、通告开始后违约 通报并拉入黑名单（对外公示并永不启用）。</string>
+</resources>

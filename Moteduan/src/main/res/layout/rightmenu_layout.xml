@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity">
+
+    <TextView
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_theme"/>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/topline"
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/whitegray">
+
+        <TextView
+            android:id="@+id/textviewdk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="消息"
+            android:textColor="@color/black_actionbar"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout6" />
+
+
+</RelativeLayout>

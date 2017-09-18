@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="porterduff.PorterDuffView">
+        <attr name="porterduffMode" format="boolean"></attr>
+    </declare-styleable>
+
+    <!-- CircleImageBorderView 圆形 imageView -->
+    <declare-styleable name="CircleImageBorderView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="VViewPager">
+        <attr name="childViewAnewMeasure" format="boolean"/>
+        <attr name="banSlide" format="boolean"/>
+    </declare-styleable>
+</resources>

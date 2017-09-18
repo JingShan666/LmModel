@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LmModel.iml" filepath="$PROJECT_DIR$/LmModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Moments/Moments.iml" filepath="$PROJECT_DIR$/Moments/Moments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Moteduan/Moteduan.iml" filepath="$PROJECT_DIR$/Moteduan/Moteduan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShareResource/ShareResource.iml" filepath="$PROJECT_DIR$/ShareResource/ShareResource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Toolkit/Toolkit.iml" filepath="$PROJECT_DIR$/Toolkit/Toolkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowlayout-lib/flowlayout-lib.iml" filepath="$PROJECT_DIR$/flowlayout-lib/flowlayout-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoview/photoview.iml" filepath="$PROJECT_DIR$/photoview/photoview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="lm_font_title">#353535</color>
+    <color name="lm_font_select">#353535</color>
+    <color name="lm_font_item_content">#2f2f2f</color>
+    <color name="lm_font_item_label">#999999</color>
+    <color name="lm_font_hint">#b2b2b2</color>
+    <color name="lm_decoration">#f2f2f2</color>
+    <color name="lm_decoration_line">@color/lm_decoration</color>
+    <color name="lm_white">#ffffff</color>
+    <color name="lm_9755D7">#9755D7</color>
+
+    <color name="lm_font_black">#000000</color>
+    <color name="lm_font">#353535</color>
+    <color name="lm_font_grey">#888888</color>
+    <color name="lm_font_light">#b2b2b2</color>
+</resources>

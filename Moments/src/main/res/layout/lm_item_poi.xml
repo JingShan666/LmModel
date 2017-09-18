@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lm_item_poi_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lm_btn_normal_size"
+        android:layout_marginLeft="@dimen/v_basic_margin"
+        android:layout_marginRight="@dimen/v_basic_margin"
+        android:gravity="center_vertical"
+        android:button="@null"
+        android:text="郑州东站"
+        android:textColor="@color/lm_font_select"
+        android:textSize="@dimen/lm_text_normal_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lm_decoration_line"
+        android:layout_marginLeft="@dimen/v_basic_margin"
+        android:layout_marginRight="@dimen/v_basic_margin"
+        />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <wei.toolkit.widget.CircleImageBorderView
+            android:id="@+id/lm_item_comment_portrait"
+            android:layout_width="@dimen/lm_portrait_size"
+            android:layout_height="@dimen/lm_portrait_size"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_marginTop="@dimen/lm_basic_margin"
+            android:src="@mipmap/icon" />
+
+        <ImageView
+            android:id="@+id/lm_item_comment_role_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lm_item_comment_portrait"
+            android:layout_alignTop="@+id/lm_item_comment_portrait"
+            android:src="@drawable/lm_icon_role_flag"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lm_item_comment_portrait"
+            android:layout_marginLeft="@dimen/lm_basic_margin"
+            android:layout_marginRight="@dimen/lm_basic_margin"
+            android:layout_toRightOf="@+id/lm_item_comment_portrait"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp">
+
+                <TextView
+                    android:id="@+id/lm_item_comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="张先森"
+                    android:textColor="@color/lm_font_grey"
+                    android:textSize="@dimen/lm_text_large_size" />
+
+                <TextView
+                    android:id="@+id/lm_item_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lm_item_comment_name"
+                    android:layout_marginTop="4dp"
+                    android:text="4-13 16:05"
+                    android:textColor="@color/lm_font_light" />
+
+                <TextView
+                    android:id="@+id/lm_item_comment_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/lm_icon_comment"
+                    android:paddingBottom="9dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="9dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lm_item_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="小清新小清新小清新小清新小清新小清新小清新小清新小清新"
+                android:textColor="@color/lm_font" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lm_item_comment_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/lm_comment_child_bg"
+                android:paddingBottom="9dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="15dp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

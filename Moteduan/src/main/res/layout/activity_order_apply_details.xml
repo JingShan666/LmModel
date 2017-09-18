@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/activity_mine_order_apply_details_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_shipin" />
+
+                <TextView
+                    android:id="@+id/activity_mine_order_apply_details_person_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="需求：1人"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/activity_mine_order_apply_details_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/activity_mine_order_apply_details_person_number"
+                    android:layout_alignRight="@+id/activity_mine_order_apply_details_person_number"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="......"
+                        android:textColor="@color/sr_font" />
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_order_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="......"
+                        android:textColor="@color/sr_font" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_order_stature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/sr_font" />
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_order_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text=""
+                        android:textColor="@color/sr_font" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/sr_font_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="约会地点"
+                    android:textColor="@color/sr_font_grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/activity_mine_order_apply_details_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left|top"
+                    android:text="......"
+                    android:textColor="@color/sr_font"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:src="@drawable/icon_site" />
+
+                <TextView
+                    android:id="@+id/activity_mine_order_apply_details_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|top"
+                    android:text="......"
+                    android:textColor="@color/sr_font_grey" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/sr_font_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="约会对象"
+                android:textColor="@color/sr_font_grey"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_card_long">
+
+                <ImageView
+                    android:id="@+id/activity_mine_order_apply_details_portrait"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                     />
+
+                <TextView
+                    android:id="@+id/activity_mine_order_apply_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_mine_order_apply_details_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/activity_mine_order_apply_details_portrait"
+                    android:text="......"
+                    android:maxEms="7"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/sr_font"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/activity_mine_order_apply_details_approve"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/activity_mine_order_apply_details_name"
+                    android:layout_alignTop="@+id/activity_mine_order_apply_details_name"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@+id/activity_mine_order_apply_details_name"
+                    android:src="@mipmap/icon_mine_approve" />
+
+                <LinearLayout
+                    android:id="@+id/activity_mine_order_apply_details_conversation_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/activity_mine_order_apply_details_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_msg_send" />
+
+                    <ImageView
+                        android:id="@+id/activity_mine_order_apply_details_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_call" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/activity_mine_order_apply_details_portrait"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/activity_mine_order_apply_details_portrait"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_white"
+                        android:padding="5dp"
+                        android:text="...岁"
+                        android:lines="1"
+                        android:textColor="@color/sr_font_grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/background_white"
+                        android:padding="5dp"
+                        android:text="...cm / ...kg"
+                        android:lines="1"
+                        android:textColor="@color/sr_font_grey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/activity_mine_order_apply_details_bwh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/background_white"
+                        android:padding="5dp"
+                        android:text="三围: .../.../..."
+                        android:lines="1"
+                        android:textColor="@color/sr_font_grey"
+                        android:visibility="invisible"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/activity_mine_order_apply_details_bt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_radius12_color_themered"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="......"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/activity_mine_order_apply_details_decline"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stroke_radius_12_color_b2b2b2"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="拒绝对方"
+                android:textColor="@color/sr_font_light"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_mine_order_apply_details_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textColor="@color/sr_font_light"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

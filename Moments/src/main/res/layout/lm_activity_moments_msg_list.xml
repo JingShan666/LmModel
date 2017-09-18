@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_moments_msg_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wei.moments.MomentsMsgListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/lm_bar_action" />
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/activity_moments_msg_list_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_moments_msg_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+            </android.support.v7.widget.RecyclerView>
+        </com.liaoinstan.springview.widget.SpringView>
+    </LinearLayout>
+
+</RelativeLayout>

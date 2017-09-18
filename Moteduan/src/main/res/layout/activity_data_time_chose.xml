@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_white"
+    >
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl1"
+        android:background="@color/theme_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="选择服务时间"
+            android:id="@+id/t1"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_white"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/date_layout"
+            android:textColor="@color/theme_white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/toleft"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_zuo"/>
+
+            <TextView
+                android:text="请选择您要发布的档期"
+                android:id="@+id/d1"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/text_gray"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/to_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_you_pre"/>
+
+        </LinearLayout>
+
+
+        <GridView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/timeGride"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:layout_below="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/msg"
+            android:textColor="@color/theme_white"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_below="@+id/timeGride"
+            android:text="请选择服务时间"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/rl1"
+        android:id="@+id/shijianbuxuan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_shijianbuxuan"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_shijianbuxian"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_shijianbuxuan"
+            android:gravity="center"
+            android:textColor="@color/release_textcolor"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="时间不限"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+       android:layout_below="@+id/shijianbuxuan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:id="@+id/cancel"
+            android:src="@drawable/cancell"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/biankuang_zhuce"
+            android:text="取消"
+            android:textColor="@color/theme_red"
+             />
+        <Button
+            android:layout_marginRight="20dp"
+            android:text="确定"
+            android:id="@+id/ok"
+            android:textColor="@color/theme_red"
+
+            android:background="@drawable/biankuang_zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

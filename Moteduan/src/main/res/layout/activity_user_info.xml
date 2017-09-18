@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_user_info_invite_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_user_info_invite_watch"
+       >
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/activity_user_info_invite_watch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/lm_text_normal_size"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/activity_user_info_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="16dp"
+        android:src="@mipmap/lm_arrow_back" />
+</RelativeLayout>

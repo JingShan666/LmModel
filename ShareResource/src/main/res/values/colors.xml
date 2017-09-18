@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sr_white">#ffffff</color>
+    <color name="sr_font_black">#000000</color>
+    <color name="sr_font">#353535</color>
+    <color name="sr_font_grey">#888888</color>
+    <color name="sr_font_light">#b2b2b2</color>
+    <color name="sr_font_f2f2f2">#f2f2f2</color>
+    <color name="sr_linkTextColor">#0000ff</color>
+    <color name="sr_purple">#7e19ff</color>
+    <color name="sr_item_line">#d9d9d9</color>
+</resources>

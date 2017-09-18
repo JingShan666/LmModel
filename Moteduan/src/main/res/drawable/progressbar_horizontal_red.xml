@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- background -->
+    <item
+        android:id="@android:id/background">
+        <color android:color="@color/gray"></color>
+        <!--android:drawable="@drawable/progress_patch_green">-->
+    </item>
+    <!-- progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <color android:color="@color/theme_red"></color>
+            <!--<nine-patch android:src="@drawable/progress_patch_galy" />-->
+        </clip>
+    </item>
+
+    <!-- second progress -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <color android:color="@color/dark_green"></color>
+            <!--<nine-patch android:src="@drawable/progresspatch_blue" />-->
+        </clip>
+    </item>
+
+</layer-list>

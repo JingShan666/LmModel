@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_open_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lm_bar_height"
+            android:background="@mipmap/v_bar_purple">
+
+            <ImageView
+                android:id="@+id/activity_open_city_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/icon_close_cross_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择城市"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/lm_text_title_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/sr_font_f2f2f2"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="当前定位"
+            android:textColor="@color/sr_font_grey"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <TextView
+            android:id="@+id/activity_open_city_gps_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/icon_location_purple"
+            android:drawablePadding="9dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="定位中..."
+            android:textColor="@color/sr_font"
+            android:textSize="@dimen/lm_text_large_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/sr_font_f2f2f2"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="已开通的城市"
+            android:textColor="@color/sr_font_grey"
+            android:textSize="@dimen/lm_text_normal_size" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_open_city_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

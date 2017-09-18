@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    >
+
+    <ImageView
+        android:id="@+id/cut"
+        android:padding="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/cut" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cut"
+        android:layout_centerHorizontal="true"
+        android:text="请输入提现密码"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/relativeLayout20"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/moneyk"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80dp"
+            android:text="提现金额"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/moneyk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="4800"
+            android:textColor="@color/pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/moneymarkd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/moneyk"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="¥"
+            android:textColor="@color/pink"
+            android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/relativeLayout21"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="160dp"
+                android:text="银行卡"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="80dp"
+                android:text="交通银行储蓄卡（0127）"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout23"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relativeLayout22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pwdconfirm"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:text="忘记密码？" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwdconfirm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout23"
+        android:layout_centerHorizontal="true">
+
+        <com.jungly.gridpasswordview.GridPasswordView
+            android:id="@+id/pswView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:gpvGridColor="#ffffff"
+            app:gpvLineColor="#c8c8c8"
+            app:gpvLineWidth="2dp"
+            app:gpvPasswordLength="6"
+            app:gpvPasswordTransformation="*"
+            app:gpvPasswordType="numberPassword"
+            app:gpvTextColor="#000"
+            app:gpvTextSize="25sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
